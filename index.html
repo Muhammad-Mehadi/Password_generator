@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="fontawesome.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -20,10 +19,10 @@
         </div>
         <hr />
         <div id="body">
-            <form action="#">
+            <div class="form">
                 <div class="p">Password Length:</div>
                 <div>
-                    <select name="password-length" id="">
+                    <select name="password-length" id="password-length">
             <option value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
@@ -32,29 +31,29 @@
           </select>
                 </div>
                 <div class="p">Include Symbols:</div>
-                <div><input type="checkbox" name="special-characters" id="" />(e.g. @#$%)</div>
+                <div><input type="checkbox" name="special-characters" id="special-characters" checked />(e.g. @#$%)</div>
                 <div class="p">Include Numbers:</div>
-                <div><input type="checkbox" name="digit" id="" />(e.g. 123456)</div>
+                <div><input type="checkbox" name="digit" id="digit" />(e.g. 123456)</div>
                 <div class="p">Include Lowercase Characters:</div>
-                <div><input type="checkbox" name="lower-characters" id="" />(e.g. abcdefgh)</div>
+                <div><input type="checkbox" name="lower-characters" id="lower-characters" checked />(e.g. abcdefgh)</div>
                 <div class="p">Include Uppercase Characters:</div>
-                <div><input type="checkbox" name="upper-characters" id="" />(e.g. ABCDEFGH)</div>
-        </div>
-        <div id="buttons">
-            <div>
-                <input type="submit" name="submit-btn" onclick="Generate()" value="Generate password" />
+                <div><input type="checkbox" name="upper-characters" id="upper-characters" />(e.g. ABCDEFGH)</div>
             </div>
-            <div>
-                <input class="reset" type="reset" name="reset-btn" value="Reset all" />
+            <div id="buttons">
+                <div>
+                    <input type="submit" name="submit-btn" onclick="Generate()" value="Generate password" />
+                </div>
+                <div>
+                    <input class="reset" type="reset" name="reset-btn" value="Reset all" />
+                </div>
+            </div>
+            </form>
+            <div id="output">
+                <p class="text">Your New Password:</p>
+                <input class="output-box" type="text">
             </div>
         </div>
-        </form>
-        <div id="output">
-            <p>Your New Password:</p>
-            <input type="text">
-        </div>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

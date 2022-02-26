@@ -29,7 +29,7 @@ hr {
     background-color: black;
 }
 
-#body form {
+#body .form {
     font-size: 20px;
     margin: 3% 0%;
     display: grid;
@@ -38,7 +38,7 @@ hr {
     row-gap: 9px;
 }
 
-#body form .p {
+#body .form .p {
     text-align: end;
 }
 
@@ -76,7 +76,8 @@ hr {
 #output {
     margin: 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "txt txt out out out";
 }
 
 #output p {
@@ -84,7 +85,15 @@ hr {
 }
 
 #output input {
-    width: 80%;
+    width: auto;
     height: 30px;
     padding-left: 8px;
+}
+
+.text {
+    grid-area: txt;
+}
+
+.output-box {
+    grid-area: out;
 }
