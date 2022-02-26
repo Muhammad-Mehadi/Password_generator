@@ -1,0 +1,90 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: monospace;
+}
+
+#main {
+    margin: 0px 30px;
+}
+
+#head {
+    margin: 40px 30px 10px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#head img {
+    width: 30px;
+    height: 30px;
+}
+
+p {
+    text-align: right;
+    margin-right: 5px;
+}
+
+hr {
+    height: 0.4px;
+    background-color: black;
+}
+
+#body form {
+    font-size: 20px;
+    margin: 3% 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 9px;
+}
+
+#body form .p {
+    text-align: end;
+}
+
+#body div select {
+    width: 120px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttons input[type="submit"] {
+    float: right;
+    background-color: darkslategray;
+    color: aliceblue;
+}
+
+#buttons input[type="reset"] {
+    background-color: brown;
+    color: aliceblue;
+}
+
+#buttons input {
+    font-size: 16px;
+    border: 0px;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#buttons .reset {
+    margin-left: 10px;
+}
+
+#output {
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#output p {
+    font-size: 20px;
+}
+
+#output input {
+    width: 80%;
+    height: 30px;
+    padding-left: 8px;
+}
